@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aji Ramdani Ari | Full-Stack Developer · Graphic Designer · Inspiring Trainer</title>
+    <meta name="description"
+        content="Full-Stack Developer | Graphic Designer | Inspiring Trainer - Crafting Digital Solutions with Creativity and Precision. Instruktur bersertifikasi BNSP dengan 2+ tahun pengalaman kerja dan pengajar.">
+    <meta property="og:title" content="Aji Ramdani Ari | Full-Stack Developer · Graphic Designer · Inspiring Trainer">
+    <meta property="og:description"
+        content="Crafting Digital Solutions with Creativity and Precision | Instruktur Bersertifikasi BNSP dengan 2+ tahun pengalaman kerja dan pengajar.">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://www.linkedin.com/in/ajiramdaniari">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS via Official CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+                        mono: ['"JetBrains Mono"', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        code,
+        pre {
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        ::selection {
+            background-color: #0f172a;
+            color: #ffffff;
+        }
+
+        .dark ::selection {
+            background-color: #f8fafc;
+            color: #0f172a;
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(148, 163, 184, 0.3);
+            border-radius: 9999px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(148, 163, 184, 0.5);
+        }
+    </style>
+    <script src="/_aistudio-iframe.js?v=2c34bde1"></script>
+</head>
+
+<body class="bg-neutral-50 text-neutral-900 dark:bg-neutral-950 dark:text-neutral-100 transition-colors duration-200">
+
+    <!-- ========================================== -->
+    <!-- 1. NAVIGATION BAR (Top Bar Contract: 3 Zones) -->
+    <!-- ========================================== -->
+    <header
+        class="sticky top-0 z-40 bg-neutral-50/90 dark:bg-neutral-950/90 backdrop-blur-md border-b border-neutral-200/80 dark:border-neutral-800/80">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+
+            <!-- Zone 1: Wordmark -->
+            <a href="#hero"
+                class="text-base font-bold tracking-tight text-neutral-900 dark:text-white hover:opacity-80 transition-opacity">
+                Aji Ramdani
+            </a>
+
+            <!-- Zone 2: Navigation Links -->
+            <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-neutral-600 dark:text-neutral-400">
+                <a href="#hero" class="hover:text-neutral-900 dark:hover:text-white transition-colors">Ringkasan</a>
+                <a href="#experience"
+                    class="hover:text-neutral-900 dark:hover:text-white transition-colors">Pengalaman</a>
+                <a href="#projects" class="hover:text-neutral-900 dark:hover:text-white transition-colors">Karya &
+                    Solusi</a>
+                <a href="#credentials" class="hover:text-neutral-900 dark:hover:text-white transition-colors">Pelatihan
+                    & BNSP</a>
+                <a href="#contact" class="hover:text-neutral-900 dark:hover:text-white transition-colors">Kontak</a>
+            </nav>
+
+            <!-- Zone 3: Actions -->
+            <div class="flex items-center gap-2.5">
+                <!-- Dark Mode Toggle Button -->
+                <button id="themeToggleBtn" type="button" aria-label="Toggle Theme"
+                    class="p-2 rounded-lg text-neutral-600 dark:text-neutral-400 hover:bg-neutral-200/60 dark:hover:bg-neutral-800 transition-colors">
+                    <svg id="sunIcon" class="hidden w-4 h-4 text-amber-400" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
+                        </path>
+                    </svg>
+                    <svg id="moonIcon" class="w-4 h-4 text-neutral-700" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z">
+                        </path>
+                    </svg>
+                </button>
+
+                <!-- CTA Button -->
+                <a href="#contact"
+                    class="px-3.5 py-1.5 text-xs font-semibold text-white bg-neutral-900 hover:bg-neutral-800 dark:bg-white dark:text-neutral-950 dark:hover:bg-neutral-200 rounded-lg transition-colors whitespace-nowrap">
+                    Hubungi Saya
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <!-- ========================================== -->
+        <!-- 2. HERO SECTION -->
+        <!-- ========================================== -->
+        <section id="hero" class="py-16 sm:py-24 border-b border-neutral-200 dark:border-neutral-800">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+                    <!-- Left Column: Personal Branding & Value Proposition -->
+                    <div class="lg:col-span-8 space-y-6">
+                        <div
+                            class="flex flex-wrap items-center gap-2 text-xs font-medium text-neutral-500 dark:text-neutral-400">
+                            <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                            <span class="font-semibold text-neutral-900 dark:text-neutral-100">Full-Stack Developer ·
+                                Graphic Designer · Inspiring Trainer</span>
+                            <span aria-hidden="true">·</span>
+                            <span class="text-emerald-700 dark:text-emerald-400 font-semibold">Instruktur Bersertifikasi
+                                BNSP</span>
+                        </div>
+
+                        <!-- Headline -->
+                        <h1
+                            class="text-3xl sm:text-5xl font-extrabold tracking-tight text-neutral-950 dark:text-white leading-[1.16]">
+                            Crafting Digital Solutions with Creativity and Precision
+                        </h1>
+
+                        <!-- Bio -->
+                        <p
+                            class="text-base sm:text-lg text-neutral-600 dark:text-neutral-300 leading-relaxed max-w-2xl">
+                            Profesional multidisiplin yang memadukan rekayasa Full-Stack yang presisi, kepekaan visual
+                            Graphic Design yang bernilai estetika tinggi, serta dedikasi sebagai Instruktur
+                            Bersertifikasi BNSP. Berpengalaman 2+ tahun dalam merancang solusi digital terintegrasi,
+                            membangun identitas visual brand, serta mengajar dan menginspirasi ratusan talenta di bidang
+                            teknologi dan desain.
+                        </p>
+
+                        <!-- Actions -->
+                        <div class="flex flex-wrap items-center gap-3 pt-2">
+                            <a href="#projects"
+                                class="px-5 py-2.5 text-sm font-semibold text-white bg-neutral-900 hover:bg-neutral-800 dark:bg-white dark:text-neutral-950 dark:hover:bg-neutral-200 rounded-lg transition-colors">
+                                Lihat Portofolio Karya & Edukasi
+                            </a>
+                            <a href="https://www.linkedin.com/in/ajiramdaniari" target="_blank"
+                                rel="noopener noreferrer"
+                                class="px-4 py-2.5 text-sm font-medium border border-neutral-300 dark:border-neutral-700 hover:border-neutral-400 dark:hover:border-neutral-500 text-neutral-800 dark:text-neutral-200 rounded-lg transition-colors flex items-center gap-2">
+                                <span>LinkedIn Profile</span>
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14">
+                                    </path>
+                                </svg>
+                            </a>
+                            <button onclick="copyEmailToClipboard()"
+                                class="px-4 py-2.5 text-sm font-medium text-neutral-700 dark:text-neutral-300 hover:text-neutral-950 dark:hover:text-white transition-colors flex items-center gap-1.5">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z">
+                                    </path>
+                                </svg>
+                                <span id="heroCopyEmailText">Salin Email</span>
+                            </button>
+                        </div>
+
+                        <!-- Proof Metrics (2+ Tahun Pengalaman & Mengajar, BNSP Trainer, 500+ Siswa, 35+ Solusi) -->
+                        <div
+                            class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-neutral-200 dark:border-neutral-800">
+                            <div>
+                                <p
+                                    class="text-2xl font-bold tracking-tight text-neutral-950 dark:text-white font-mono tabular-nums">
+                                    2+ Thn</p>
+                                <p class="text-xs text-neutral-500 dark:text-neutral-400 mt-0.5">Kerja & Mengajar</p>
+                            </div>
+                            <div>
+                                <p
+                                    class="text-2xl font-bold tracking-tight text-emerald-600 dark:text-emerald-400 font-mono">
+                                    BNSP</p>
+                                <p class="text-xs text-neutral-500 dark:text-neutral-400 mt-0.5">Instruktur Resmi</p>
+                            </div>
+                            <div>
+                                <p
+                                    class="text-2xl font-bold tracking-tight text-neutral-950 dark:text-white font-mono tabular-nums">
+                                    500+</p>
+                                <p class="text-xs text-neutral-500 dark:text-neutral-400 mt-0.5">Peserta Didik</p>
+                            </div>
+                            <div>
+                                <p
+                                    class="text-2xl font-bold tracking-tight text-neutral-950 dark:text-white font-mono tabular-nums">
+                                    35+</p>
+                                <p class="text-xs text-neutral-500 dark:text-neutral-400 mt-0.5">Proyek & Desain</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Portrait Visual -->
+                    <div class="lg:col-span-4 flex justify-center">
+                        <div
+                            class="relative w-64 h-64 sm:w-72 sm:h-72 rounded-2xl overflow-hidden border border-neutral-300/80 dark:border-neutral-800 shadow-xl bg-neutral-200 dark:bg-neutral-900 group">
+                            <img src="images/Terima kasih kepada LPK KEN dan PPKD Jakarta Barat atas kesempatan berharga untuk berkontribusi .jpg"
+                                alt="Aji Ramdani Ari - Full-Stack Developer, Graphic Designer & Inspiring Trainer"
+                                class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
+                            <div
+                                class="absolute bottom-3 left-3 right-3 bg-neutral-950/85 backdrop-blur-md border border-neutral-700/60 rounded-lg p-2.5 flex items-center justify-between text-xs text-white">
+                                <div>
+                                    <span class="font-semibold block">Aji Ramdani Ari</span>
+                                    <span class="text-[10px] text-neutral-400">Instruktur Bersertifikasi BNSP</span>
+                                </div>
+                                <span class="text-emerald-400 text-[11px] font-mono font-semibold">BNSP Certified</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- 3. PENGALAMAN KERJA & MENGAJAR RINGKAS -->
+        <!-- ========================================== -->
+        <section id="experience" class="py-16 sm:py-20 border-b border-neutral-200 dark:border-neutral-800">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6">
+                <div
+                    class="flex flex-col sm:flex-row sm:items-end justify-between mb-10 pb-4 border-b border-neutral-200 dark:border-neutral-800">
+                    <div>
+                        <p
+                            class="text-xs font-semibold uppercase tracking-wider text-neutral-500 dark:text-neutral-400">
+                            Rekam Jejak Profesional & Edukasi</p>
+                        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-neutral-950 dark:text-white mt-1">
+                            Pengalaman Profesional & Pengajaran
+                        </h2>
+                    </div>
+                    <button onclick="openExperienceModal()"
+                        class="mt-4 sm:mt-0 text-sm font-semibold text-neutral-900 dark:text-white hover:underline flex items-center gap-1.5 self-start">
+                        <span>Buka Riwayat Lengkap (Deep-Dive)</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div id="experienceList" class="space-y-6"></div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- 4. HIGHLIGHT PROYEK: CODE & DESIGN -->
+        <!-- ========================================== -->
+        <section id="projects" class="py-16 sm:py-20 border-b border-neutral-200 dark:border-neutral-800">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6">
+                <div
+                    class="flex flex-col sm:flex-row sm:items-end justify-between mb-10 pb-4 border-b border-neutral-200 dark:border-neutral-800">
+                    <div>
+                        <p
+                            class="text-xs font-semibold uppercase tracking-wider text-neutral-500 dark:text-neutral-400">
+                            Karya Rekayasa, Desain & Edukasi</p>
+                        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-neutral-950 dark:text-white mt-1">
+                            Highlight Proyek & Solusi Digital
+                        </h2>
+                    </div>
+                    <p class="text-sm text-neutral-500 dark:text-neutral-400 mt-2 sm:mt-0">
+                        Kunjungi tautan web untuk melihat karya dan sistem lebih lanjut.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                    <!-- Project 1 -->
+                    <div
+                        class="border border-neutral-200 dark:border-neutral-800/80 bg-white dark:bg-neutral-900/50 rounded-xl overflow-hidden flex flex-col justify-between">
+                        <div class="h-48 overflow-hidden bg-neutral-900 relative">
+                            <img src="images/image copy 2.png" alt="EduTech LMS" class="w-full h-full object-cover">
+                            <div
+                                class="absolute top-3 left-3 bg-neutral-950/80 backdrop-blur-md px-2.5 py-1 rounded text-xs font-mono text-white">
+                                FullStack Developer</div>
+                        </div>
+                        <div class="p-5 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-base font-bold text-neutral-950 dark:text-white">Sukarobot ID (EduTech
+                                    Platform)</h3>
+                                <p
+                                    class="text-xs text-neutral-600 dark:text-neutral-300 mt-2 line-clamp-3 leading-relaxed">
+                                    Platform pembelajaran koding dan desain interaktif dengan live evaluation,
+                                    submission tugas, dan pelacakan progres 500+ peserta didik.
+                                </p>
+                            </div>
+                            <div
+                                class="mt-4 pt-4 border-t border-neutral-100 dark:border-neutral-800 flex items-center justify-between">
+                                <span
+                                    class="text-xs font-mono text-emerald-600 dark:text-emerald-400 font-semibold">Sukarobot</span>
+                                <a href="https://sukarobot.id/" target="_blank" rel="noopener noreferrer"
+                                    class="text-xs font-semibold text-neutral-900 dark:text-white hover:underline">
+                                    Kunjungi Website →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div
+                        class="border border-neutral-200 dark:border-neutral-800/80 bg-white dark:bg-neutral-900/50 rounded-xl overflow-hidden flex flex-col justify-between">
+                        <div class="h-48 overflow-hidden bg-neutral-900 relative">
+                            <img src="images/image copy.png" alt="Brand Identity" class="w-full h-full object-cover">
+                            <div
+                                class="absolute top-3 left-3 bg-neutral-950/80 backdrop-blur-md px-2.5 py-1 rounded text-xs font-mono text-white">
+                                Fullstack Developer</div>
+                        </div>
+                        <div class="p-5 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-base font-bold text-neutral-950 dark:text-white">Aridev Studio Creative
+                                </h3>
+                                <p
+                                    class="text-xs text-neutral-600 dark:text-neutral-300 mt-2 line-clamp-3 leading-relaxed">
+                                    Perancangan identitas visual brand (logo, style guide, kemasan) yang
+                                    disinkronisasikan ke dalam toko online dan profil perusahaan.
+                                </p>
+                            </div>
+                            <div
+                                class="mt-4 pt-4 border-t border-neutral-100 dark:border-neutral-800 flex items-center justify-between">
+                                <span
+                                    class="text-xs font-mono text-emerald-600 dark:text-emerald-400 font-semibold">Aridev
+                                    Studio</span>
+                                <a href="https://www.aridevstudio.web.id/" target="_blank" rel="noopener noreferrer"
+                                    class="text-xs font-semibold text-neutral-900 dark:text-white hover:underline">
+                                    Kunjungi Website →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div
+                        class="border border-neutral-200 dark:border-neutral-800/80 bg-white dark:bg-neutral-900/50 rounded-xl overflow-hidden flex flex-col justify-between">
+                        <div class="h-48 overflow-hidden bg-neutral-900 relative">
+                            <img src="images/image.png" alt="Curriculum Series" class="w-full h-full object-cover">
+                            <div
+                                class="absolute top-3 left-3 bg-neutral-950/80 backdrop-blur-md px-2.5 py-1 rounded text-xs font-mono text-white">
+                                Project Manager</div>
+                        </div>
+                        <div class="p-5 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-base font-bold text-neutral-950 dark:text-white">Sukarobot Academy
+                                    (Company Profile)</h3>
+                                <p
+                                    class="text-xs text-neutral-600 dark:text-neutral-300 mt-2 line-clamp-3 leading-relaxed">
+                                    Sistem aplikasi web profil perusahaan dan manajemen akademik, menyajikan informasi
+                                    program pelatihan dan pendaftaran peserta.
+                                </p>
+                            </div>
+                            <div
+                                class="mt-4 pt-4 border-t border-neutral-100 dark:border-neutral-800 flex items-center justify-between">
+                                <span
+                                    class="text-xs font-mono text-emerald-600 dark:text-emerald-400 font-semibold">Sukarobot</span>
+                                <a href="http://sukarobot.com/" target="_blank" rel="noopener noreferrer"
+                                    class="text-xs font-semibold text-neutral-900 dark:text-white hover:underline">
+                                    Kunjungi Website →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div
+                        class="border border-neutral-200 dark:border-neutral-800/80 bg-white dark:bg-neutral-900/50 rounded-xl overflow-hidden flex flex-col justify-between">
+                        <div class="h-48 overflow-hidden bg-neutral-900 relative">
+                            <img src="images/SubaArch.png" alt="Curriculum Series" class="w-full h-full object-cover">
+                            <div
+                                class="absolute top-3 left-3 bg-neutral-950/80 backdrop-blur-md px-2.5 py-1 rounded text-xs font-mono text-white">
+                                FrontEnd Developer</div>
+                        </div>
+                        <div class="p-5 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-base font-bold text-neutral-950 dark:text-white">SUBA ARCH Portofolio
+                                </h3>
+                                <p
+                                    class="text-xs text-neutral-600 dark:text-neutral-300 mt-2 line-clamp-3 leading-relaxed">
+                                    Website company profile dan portofolio arsitektur elegan yang menampilkan
+                                    karya-karya unggulan dari SUBA ARCH.
+                                </p>
+                            </div>
+                            <div
+                                class="mt-4 pt-4 border-t border-neutral-100 dark:border-neutral-800 flex items-center justify-between">
+                                <span
+                                    class="text-xs font-mono text-emerald-600 dark:text-emerald-400 font-semibold">SUBA
+                                    ARCH</span>
+                                <a href="https://suba-arch.co.id/portofolio/" target="_blank" rel="noopener noreferrer"
+                                    class="text-xs font-semibold text-neutral-900 dark:text-white hover:underline">
+                                    Kunjungi Website →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- 5. INSPIRING TRAINER & SERTIFIKASI BNSP -->
+        <!-- ========================================== -->
+        <section id="credentials" class="py-16 sm:py-20 border-b border-neutral-200 dark:border-neutral-800">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+
+                    <!-- Left Column: Trainer & Workshops -->
+                    <div class="lg:col-span-7 space-y-6">
+                        <div>
+                            <p
+                                class="text-xs font-semibold uppercase tracking-wider text-neutral-500 dark:text-neutral-400">
+                                Pengajaran & Workshop</p>
+                            <h2
+                                class="text-2xl sm:text-3xl font-bold tracking-tight text-neutral-950 dark:text-white mt-1">
+                                Inspiring Trainer & Sesi Edukasi
+                            </h2>
+                        </div>
+                        <div class="max-h-[34rem] overflow-y-auto space-y-4 pr-2">
+                            <div class="rounded-xl overflow-hidden border border-neutral-200 dark:border-neutral-800 h-48 bg-neutral-900 relative">
+                                <img src="images/Terima kasih kepada LPK KEN dan PPKD Jakarta Barat atas kesempatan berharga untuk berkontribusi .jpg" alt="Sesi Pelatihan 1" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-t from-neutral-950/85 via-neutral-950/30 to-transparent flex items-end p-4 pointer-events-none">
+                                    <span class="text-xs text-white font-medium">Sesi Pelatihan Interaktif & Mentorship Vokasi Bersertifikasi BNSP</span>
+                                </div>
+                            </div>
+                            <div class="rounded-xl overflow-hidden border border-neutral-200 dark:border-neutral-800 h-48 bg-neutral-900 relative">
+                                <img src="images/image.png" alt="Sesi Pelatihan 2" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-t from-neutral-950/85 via-neutral-950/30 to-transparent flex items-end p-4 pointer-events-none">
+                                    <span class="text-xs text-white font-medium">National Tech Bootcamp Series</span>
+                                </div>
+                            </div>
+                            <div class="rounded-xl overflow-hidden border border-neutral-200 dark:border-neutral-800 h-48 bg-neutral-900 relative">
+                                <img src="images/image copy.png" alt="Sesi Pelatihan 3" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-t from-neutral-950/85 via-neutral-950/30 to-transparent flex items-end p-4 pointer-events-none">
+                                    <span class="text-xs text-white font-medium">Lokakarya Instruktur Vokasi BNSP</span>
+                                </div>
+                            </div>
+                            <div class="rounded-xl overflow-hidden border border-neutral-200 dark:border-neutral-800 h-48 bg-neutral-900 relative">
+                                <img src="images/image copy 2.png" alt="Sesi Pelatihan 4" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-t from-neutral-950/85 via-neutral-950/30 to-transparent flex items-end p-4 pointer-events-none">
+                                    <span class="text-xs text-white font-medium">From Zero to Full-Stack Web App</span>
+                                </div>
+                            </div>
+                            <div class="rounded-xl overflow-hidden border border-neutral-200 dark:border-neutral-800 h-48 bg-neutral-900 relative">
+                                <img src="images/SubaArch.png" alt="Sesi Pelatihan 5" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-t from-neutral-950/85 via-neutral-950/30 to-transparent flex items-end p-4 pointer-events-none">
+                                    <span class="text-xs text-white font-medium">Pengembangan Portofolio SUBA ARCH</span>
+                                </div>
+                            </div>
+                            <div class="rounded-xl overflow-hidden border border-neutral-200 dark:border-neutral-800 h-48 bg-neutral-900 relative">
+                                <img src="/src/assets/images/speaker_conference_stage_1791042108082.jpg" alt="Sesi Pelatihan 6" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-gradient-to-t from-neutral-950/85 via-neutral-950/30 to-transparent flex items-end p-4 pointer-events-none">
+                                    <span class="text-xs text-white font-medium">Sesi Inspirasi & Digital Transformation</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space-y-3">
+                            <div
+                                class="p-4 rounded-lg border border-neutral-200 dark:border-neutral-800/80 bg-white dark:bg-neutral-900/50">
+                                <div class="flex justify-between text-xs text-neutral-500 mb-1">
+                                    <span>Lokakarya Instruktur Vokasi BNSP</span><span class="font-mono">120+
+                                        Instruktur</span>
+                                </div>
+                                <h4 class="text-sm font-bold text-neutral-900 dark:text-white">Metodologi Pengajaran
+                                    Pemrograman Web Interaktif</h4>
+                            </div>
+                            <div
+                                class="p-4 rounded-lg border border-neutral-200 dark:border-neutral-800/80 bg-white dark:bg-neutral-900/50">
+                                <div class="flex justify-between text-xs text-neutral-500 mb-1">
+                                    <span>National Tech Bootcamp Series</span><span class="font-mono">350+
+                                        Peserta</span>
+                                </div>
+                                <h4 class="text-sm font-bold text-neutral-900 dark:text-white">From Zero to Full-Stack:
+                                    Membangun Aplikasi Web Skalabel</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: BNSP & Certifications -->
+                    <div class="lg:col-span-5 space-y-6">
+                        <div>
+                            <p
+                                class="text-xs font-semibold uppercase tracking-wider text-neutral-500 dark:text-neutral-400">
+                                Kredensial Resmi</p>
+                            <h2
+                                class="text-2xl sm:text-3xl font-bold tracking-tight text-neutral-950 dark:text-white mt-1">
+                                Sertifikasi & Pelatihan
+                            </h2>
+                        </div>
+                        <p id="certificationCount" class="text-xs text-neutral-500 dark:text-neutral-400"></p>
+                        <div id="certificationList" class="space-y-3 max-h-[34rem] overflow-y-auto pr-2"
+                            aria-label="Daftar sertifikat"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- 6. FORMULIR KONTAK TERHUBUNG FORMSPREE -->
+        <!-- ========================================== -->
+        <section id="contact" class="py-16 sm:py-24">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6">
+                <div class="text-center max-w-xl mx-auto mb-10">
+                    <p class="text-xs font-semibold uppercase tracking-wider text-neutral-500 dark:text-neutral-400">
+                        Kolaborasi & Konsultasi</p>
+                    <h2
+                        class="text-2xl sm:text-4xl font-extrabold tracking-tight text-neutral-950 dark:text-white mt-1">
+                        Hubungi Aji Ramdani Ari
+                    </h2>
+                    <p class="text-sm text-neutral-600 dark:text-neutral-400 mt-2">
+                        Terbuka untuk pengembangan proyek Full-Stack Web, perancangan Graphic Design, pelatihan
+                        in-house/bootcamp, serta sertifikasi vokasi. Pesan langsung masuk ke inbox email pribadi.
+                    </p>
+                </div>
+
+                <div
+                    class="p-6 sm:p-10 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900/70 shadow-sm">
+                    <div id="formAlertBox" class="hidden mb-6 p-4 rounded-lg text-sm flex items-start gap-3">
+                        <div id="alertMessage" class="flex-1 font-medium"></div>
+                    </div>
+
+                    <form id="contactForm" onsubmit="handleContactSubmit(event)" novalidate class="space-y-5">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div>
+                                <label for="fullName"
+                                    class="block text-xs font-semibold text-neutral-800 dark:text-neutral-200 mb-1.5">Nama
+                                    Lengkap *</label>
+                                <input type="text" id="fullName" name="name" required placeholder="Budi Santoso"
+                                    class="w-full px-3.5 py-2.5 rounded-lg border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-950 text-neutral-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-neutral-900 dark:focus:ring-white">
+                                <p id="nameError" class="hidden text-xs text-rose-500 mt-1">Nama minimal 2 karakter.</p>
+                            </div>
+                            <div>
+                                <label for="emailAddr"
+                                    class="block text-xs font-semibold text-neutral-800 dark:text-neutral-200 mb-1.5">Alamat
+                                    Email *</label>
+                                <input type="email" id="emailAddr" name="email" required
+                                    placeholder="budi@perusahaan.com"
+                                    class="w-full px-3.5 py-2.5 rounded-lg border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-950 text-neutral-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-neutral-900 dark:focus:ring-white">
+                                <p id="emailError" class="hidden text-xs text-rose-500 mt-1">Format email tidak valid.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="msgSubject"
+                                class="block text-xs font-semibold text-neutral-800 dark:text-neutral-200 mb-1.5">Kebutuhan
+                                / Topik Diskusi *</label>
+                            <input type="text" id="msgSubject" name="subject" required
+                                placeholder="Proyek Web Full-Stack / Desain Branding / Undangan Pelatihan"
+                                class="w-full px-3.5 py-2.5 rounded-lg border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-950 text-neutral-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-neutral-900 dark:focus:ring-white">
+                            <p id="subjectError" class="hidden text-xs text-rose-500 mt-1">Topik diskusi wajib diisi.
+                            </p>
+                        </div>
+
+                        <div>
+                            <label for="msgContent"
+                                class="block text-xs font-semibold text-neutral-800 dark:text-neutral-200 mb-1.5">Pesan
+                                / Rincian Kebutuhan *</label>
+                            <textarea id="msgContent" name="message" rows="4" required
+                                placeholder="Ceritakan gambaran singkat kebutuhan proyek web, desain grafis, atau program pelatihan yang ingin Anda diskusikan..."
+                                class="w-full px-3.5 py-2.5 rounded-lg border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-950 text-neutral-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-neutral-900 dark:focus:ring-white resize-y"></textarea>
+                            <p id="messageError" class="hidden text-xs text-rose-500 mt-1">Pesan minimal 10 karakter.
+                            </p>
+                        </div>
+
+                        <div class="pt-2 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                            <span class="text-xs text-neutral-500">Terhubung langsung ke Formspree
+                                (aridevstudio@gmail.com)</span>
+                            <button type="submit" id="submitBtn"
+                                class="px-6 py-2.5 text-sm font-semibold text-white bg-neutral-900 hover:bg-neutral-800 dark:bg-white dark:text-neutral-950 rounded-lg transition-colors">
+                                <span id="btnText">Kirim Pesan Sekarang</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========================================== -->
+    <!-- 7. FOOTER DENGAN FITUR SALIN ALAMAT EMAIL -->
+    <!-- ========================================== -->
+    <footer class="border-t border-neutral-200 dark:border-neutral-800 py-12 bg-neutral-100/50 dark:bg-neutral-900/30">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div>
+                <span class="text-base font-bold text-neutral-950 dark:text-white">Aji Ramdani Ari</span>
+                <p class="text-xs text-neutral-500 mt-0.5">Full-Stack Developer · Graphic Designer · Inspiring Trainer
+                    (Instruktur BNSP)</p>
+            </div>
+
+            <div
+                class="flex items-center gap-2 p-1.5 pl-3 rounded-lg border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-950 text-xs">
+                <span class="font-mono text-neutral-700 dark:text-neutral-300">aridevstudio@gmail.com</span>
+                <button id="footerCopyBtn" onclick="copyEmailToClipboard()"
+                    class="px-3 py-1 text-xs font-semibold rounded bg-neutral-900 text-white dark:bg-white dark:text-neutral-950">
+                    <span id="footerCopyText">Salin Alamat Email</span>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================== -->
+    <!-- 8. MODAL RIWAYAT KARIER LENGKAP -->
+    <!-- ========================================== -->
+    <div id="experienceModal"
+        class="hidden fixed inset-0 z-50 overflow-y-auto bg-black/60 backdrop-blur-sm p-4 flex items-center justify-center">
+        <div
+            class="w-full max-w-2xl bg-white dark:bg-neutral-900 rounded-2xl p-6 border border-neutral-200 dark:border-neutral-800">
+            <div class="flex justify-between items-center pb-3 border-b border-neutral-200 dark:border-neutral-800">
+                <h3 class="text-lg font-bold">Riwayat Karier & Pelatihan Lengkap</h3>
+                <button onclick="closeExperienceModal()" class="text-neutral-500 text-lg">✕</button>
+            </div>
+            <div id="experienceModalContent"
+                class="space-y-4 py-4 text-xs leading-relaxed max-h-[60vh] overflow-y-auto"></div>
+        </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- 9. MODAL ARSITEKTUR TEKNIS PROYEK -->
+    <!-- ========================================== -->
+    <div id="projectModal"
+        class="hidden fixed inset-0 z-50 overflow-y-auto bg-black/60 backdrop-blur-sm p-4 flex items-center justify-center">
+        <div
+            class="w-full max-w-2xl bg-white dark:bg-neutral-900 rounded-2xl p-6 border border-neutral-200 dark:border-neutral-800">
+            <div class="flex justify-between items-center pb-3 border-b border-neutral-200 dark:border-neutral-800">
+                <h3 id="modalTitle" class="text-lg font-bold">Detail Solusi Teknis & Desain</h3>
+                <button onclick="closeProjectModal()" class="text-neutral-500 text-lg">✕</button>
+            </div>
+            <div class="space-y-4 py-4 text-xs leading-relaxed max-h-[60vh] overflow-y-auto">
+                <div>
+                    <p class="font-bold uppercase tracking-wider text-neutral-500">Tantangan & Solusi</p>
+                    <p id="modalProblem" class="mt-1 text-neutral-700 dark:text-neutral-300"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- 10. VANILLA JAVASCRIPT LOGIC -->
+    <!-- ========================================== -->
+    <script>
+        // Edit or add pengalaman di array ini; daftar utama dan modal dibuat otomatis dari data yang sama.
+        const experienceData = [
+            {
+                title: 'Trainer',
+                company: 'Sukarobot Academy',
+                employmentType: 'Pekerja Lepas',
+                period: 'Jul 2024 — Saat ini',
+                location: 'Sukabumi, Jawa Barat',
+                workMode: 'Di lokasi',
+                details: [],
+                skills: ['Pengajar', 'Web Developer', 'Digital Marketing', 'Desain Grafis', 'Microsoft Office', 'Coding For Kids', 'Arduino Robotik'],
+                otherSkillsCount: 0
+            },
+            {
+                title: 'Staff Divisi IT & Media',
+                company: 'PT Suka Teknologi Global',
+                employmentType: 'Purnawaktu',
+                period: 'Mei 2024 — Saat ini',
+                location: 'Sukabumi, Jawa Barat',
+                workMode: 'Di lokasi',
+                details: [],
+                skills: ['Search Engine Optimization (SEO)', 'Full-Stack Development'],
+                otherSkillsCount: 4
+            },
+            {
+                title: 'Instruktur Profesional',
+                company: 'LPK Sukarobot Academy',
+                employmentType: 'Pekerja Lepas',
+                period: 'Jul 2024 — Saat ini',
+                location: 'Sukabumi, Jawa Barat',
+                workMode: 'Di lokasi',
+                details: [],
+                skills: ['Web Developer', 'Digital Marketing', 'Graphic Design', 'Content Creator'],
+                otherSkillsCount: 1
+            },
+            {
+                title: 'Founder & CEO',
+                company: 'PT Aridev Studio Creative',
+                employmentType: 'Paruh Waktu',
+                period: 'Des 2022 — Saat ini',
+                location: 'Sukabumi, Jawa Barat',
+                workMode: 'Di lokasi',
+                details: [],
+                skills: ['Leadership', 'Business Strategy', 'Agency Management', 'Project Management'],
+                otherSkillsCount: 0
+            },
+            {
+                title: 'Instruktur Graphic Design & UI/UX Design',
+                company: 'Vokraf',
+                employmentType: 'Gabungan',
+                period: 'Sep 2025 — Saat ini',
+                location: 'Jakarta Selatan, Jakarta Raya',
+                workMode: '',
+                details: [],
+                skills: ['Graphic Design', 'UI/UX Design', 'Figma', 'Visual Communication', 'Instructional Design'],
+                otherSkillsCount: 0
+            },
+            {
+                title: 'Web Developer',
+                company: 'SUBA ARCH',
+                employmentType: 'Magang',
+                period: 'Okt 2023 — Des 2023 · 3 bulan',
+                location: 'Sukabumi, Jawa Barat',
+                workMode: 'Di lokasi',
+                details: ['Membuat website landing page perusahaan.', 'Mengelola website perusahaan.'],
+                skills: ['Figma (Software)', 'Desain Web'],
+                otherSkillsCount: 8
+            }
+        ];
+
+        // Tambahkan atau ubah sertifikat di array ini; daftar pada halaman dibuat otomatis.
+        const certificationData = [
+            { title: 'AI Productivity and AI API Integration for Developers', issuer: 'Hacktiv8 Indonesia', date: 'Jul 2026' },
+            { title: 'Certificate Of Competence Digital Marketing ', issuer: 'Badan Nasional Sertifikasi Profesi (BNSP)', date: 'April 2026', validUntil: 'April 2029' },
+            { title: 'Certificate Of Competence Operation And System Tools (Junior Computer Operator)', issuer: 'Badan Nasional Sertifikasi Profesi (BNSP)', date: 'Nov 2025', validUntil: 'Nov 2028' },
+            { title: 'Certificate Of Competence Level 4, Field of Industrial Enterprises', issuer: 'Badan Nasional Sertifikasi Profesi (BNSP)', date: 'Des 2025', validUntil: 'Des 2028', skills: ['Entrepreneurship'] },
+            { title: 'Sertifikat Narasumber Junior Web Developer', issuer: 'Kementerian Ketenagakerjaan Republik Indonesia', date: 'Des 2025', skills: ['Instruktur', 'Web Development'] },
+            { title: 'Pelatihan Basic Content for Sosial Media', issuer: 'BBPVP Bekasi Kemnaker', date: 'Jul 2025', skills: ['Content creator'] },
+            { title: 'UI/UX DESIGN', issuer: 'Special Skill Indonesia', date: 'Apr 2025', skills: ['UI / UX'] },
+            { title: 'Simulasi Jaringan dengan PNETLab', issuer: 'Aguna Course', date: 'Apr 2025', id: 'AC-172-46606500-66', skills: ['Jaringan', 'Staff IT'] },
+            { title: 'Certificate Of Competence Instruktur Terampil', issuer: 'Badan Nasional Sertifikasi Profesi (BNSP)', date: 'Okt 2024', skills: ['Training', 'Instruktur'] },
+            { title: "Beginner's guide to MySQL on Alibaba Cloud", issuer: 'Alibaba Cloud', date: 'Nov 2024', skills: ['MySQL'] },
+            { title: 'Mastering Esports Poster Design With Photoshop', issuer: 'Rubrik Grafis', date: 'Okt 2024', skills: ['Adobe Photoshop', 'Graphic Design'] },
+            { title: 'Full Stack Laravel React Js : Build Streaming Website Like Netflix', issuer: 'BuildWithAngga', date: 'Des 2024', skills: ['Laravel', 'React.js'] },
+            { title: 'Alibaba Cloud Security Profesional Academy Digital Talent Scholarship 2024', issuer: 'Digital Talent Scholarship', date: 'Okt 2024', skills: ['Cybersecurity', 'Alibaba Cloud'] },
+            { title: 'Certificate Of Competence Programming And Software Development', issuer: 'Badan Nasional Sertifikasi Profesi (BNSP)', date: 'Jun 2024', validUntil: 'Jun 2027', skills: ['Web Development', 'Programming'] },
+            { title: 'Certificate Of Competence Network And Infrastructure', issuer: 'Badan Nasional Sertifikasi Profesi (BNSP)', date: 'Mei 2024', validUntil: 'Mei 2027', skills: ['Networking', 'Network Administration'] },
+            { title: 'Digitalisasi UMKM Berbasis Syariah (Digital Entrepreneurship Academy)', issuer: 'Digital Talent Scholarship', date: 'Jul 2024' },
+            { title: 'Shortclass Pelatihan Design Grafis With Canva', issuer: 'Universitas Terbuka', date: 'Jul 2024', skills: ['Canva', 'Graphic Design'] },
+            { title: 'Meningkatkan Kesadaran Keamanan Siber: Langkah Awal Menuju Ketangguhan Digital', issuer: 'Pijar Mahir', date: 'Apr 2024', skills: ['Cybersecurity'] },
+            { title: 'Roadmap Belajar Mobile Development : Teori & Praktek', issuer: 'Dunia Coding', date: 'Jul 2024', skills: ['Mobile Application Development', 'Kotlin'] },
+            { title: 'Certificate Of Competence DESAINER GRAFIS MUDA', issuer: 'Badan Nasional Sertifikasi Profesi (BNSP)', date: 'Mei 2024', validUntil: 'Mei 2027', skills: ['Adobe Photoshop', 'Digital Designs'] },
+            { title: 'Metode dan Basic Skill Product Manager', issuer: 'Binar Academy', date: 'Apr 2024', skills: ['UX Research', 'Product Management'] },
+            { title: 'Analisis Data Excel Certificate', issuer: 'Microsoft', date: 'Apr 2024', skills: ['Microsoft Excel', 'Data Analysis'] },
+            { title: 'Kegiatan Lomba Kreativitas Himpunan Mahasiswa Diploma III Kebidanan', issuer: 'STIKESMI', date: 'Agu 2023', skills: ['Adobe Illustrator', 'Graphic Design'] },
+            { title: 'Visit Industrial PT BONET UTAMA', issuer: 'BONET', date: 'Feb 2023' },
+            { title: 'KickStart Data Science Journey', issuer: 'Rakamin Academy', date: 'Apr 2023', expires: 'Mei 2023', id: '191995DATA_SCIENCE3452023', skills: ['Data Analysis'] },
+            { title: 'Memulai Dasar Pemrograman untuk Menjadi Pengembang Software', issuer: 'Dicoding Indonesia', date: 'Sep 2023', expires: 'Sep 2026', id: 'KEXLL98NMXG2', skills: ['Front-End Development', 'JavaScript'] },
+            { title: 'Melakukan Riset UX dan Uji coba Konsep Awal', issuer: 'Coursera', date: 'Mei 2023', id: 'UPAJY4NDSRP5', skills: ['User Experience (UX)'] },
+            { title: 'Mendesain Web yang Responsif di Adobe XD', issuer: 'Coursera', date: 'Jun 2023', id: 'XE9STP9U4A5R', skills: ['User Experience (UX)'] },
+            { title: 'Mendesain Pengalaman Pengguna untuk Kebaikan Sosial & Bersiap untuk Pekerjaan', issuer: 'Coursera', date: 'Jun 2023', id: 'QXXQHMCSW2B6', skills: ['User Experience (UX)'] },
+            { title: 'Mulailah Proses Desain UX: Berempati, Mendefinisikan, dan Menciptakan Ide (ideate)', issuer: 'Coursera', date: 'Apr 2023', id: 'RWU3FNK7MU4E', skills: ['User Experience (UX)'] },
+            { title: 'Membuat Desain dan Purwarupa High-Fidelity di Figma', issuer: 'Coursera', date: 'Jun 2023', id: 'VFKYR4G6RDU9', skills: ['User Experience (UX)'] },
+            { title: 'Membuat Wireframe dan Purwarupa Low-Fidelity', issuer: 'Coursera', date: 'Mei 2023', id: '4KJL7VYR427S', skills: ['User Experience (UX)'] },
+            { title: 'Dasar-dasar Desain Pengalaman Pengguna (User Experience, UX)', issuer: 'Coursera', date: 'Apr 2023', id: 'G85MSMLWZKY7', skills: ['User Experience (UX)'] },
+            { title: 'Desain UX Google Spesialisasi', issuer: 'Coursera', date: 'Jun 2023', id: 'YD2JLHV7V3YU', skills: ['Graphic Design', 'Web Development', 'User Experience'] },
+            { title: 'Bootcamp UI / UX Design', issuer: 'Universitas Negeri Surabaya', date: 'Okt 2022', id: 'B/63034/UN38.5/KM.10.04/2022', skills: ['UI / UX', 'User Interface Design'] },
+            { title: 'Seminar Nasional Dan Call For Paper Administrasi Publik', issuer: 'Universitas Udayana (UNUD)', date: 'Sep 2022' },
+            { title: 'Webinar Exsoss II', issuer: 'Universitas Islam Bandung (Unisba)', date: 'Sep 2022' },
+            { title: 'Magic Fia Ub 2022', issuer: 'University of Brawijaya', date: 'Sep 2022' },
+            { title: 'Bem Creativity Contest 2022', issuer: 'STIKESMI', date: 'Agu 2022', skills: ['Graphic Design', 'Adobe Photoshop'] },
+            { title: 'Sharing The Dream Scholarship 2022', issuer: 'SCG', date: 'Sep 2022' }
+        ];
+
+        function renderCertifications() {
+            const list = document.getElementById('certificationList');
+            document.getElementById('certificationCount').textContent = `${certificationData.length} sertifikat dan pelatihan`;
+            list.innerHTML = certificationData.map(cert => {
+                const meta = [
+                    `Diterbitkan ${cert.date}`,
+                    cert.validUntil ? `Berlaku hingga ${cert.validUntil}` : '',
+                    cert.expires ? `Kedaluwarsa ${cert.expires}` : '',
+                    cert.id ? `ID: ${cert.id}` : ''
+                ].filter(Boolean).map(escapeHtml).join(' · ');
+                const skills = cert.skills?.length
+                    ? `<p class="text-xs text-neutral-500 dark:text-neutral-400 mt-2">Keahlian: ${cert.skills.map(escapeHtml).join(' · ')}</p>`
+                    : '';
+
+                return `<article class="p-4 rounded-lg border border-neutral-200 dark:border-neutral-800/80 bg-white dark:bg-neutral-900/50">
+          <h4 class="text-sm font-bold text-neutral-900 dark:text-white">${escapeHtml(cert.title)}</h4>
+          <p class="text-xs text-neutral-600 dark:text-neutral-400 mt-1">${escapeHtml(cert.issuer)}</p>
+          <p class="text-[11px] text-neutral-500 dark:text-neutral-400 mt-2 font-mono">${meta}</p>
+          ${skills}
+        </article>`;
+            }).join('');
+        }
+
+        function escapeHtml(value) {
+            return String(value).replace(/[&<>"']/g, character => ({
+                '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+            })[character]);
+        }
+
+        renderCertifications();
+
+        function renderExperience() {
+            const list = document.getElementById('experienceList');
+            const modalContent = document.getElementById('experienceModalContent');
+
+            list.innerHTML = experienceData.map(job => {
+                const skills = [...(job.skills || [])];
+                if (job.otherSkillsCount) skills.push(`dan ${job.otherSkillsCount} keahlian lainnya`);
+                const details = (job.details || []).length
+                    ? `<ul class="text-sm text-neutral-600 dark:text-neutral-300 leading-relaxed mb-4 list-disc list-inside">${job.details.map(item => `<li>${escapeHtml(item)}</li>`).join('')}</ul>`
+                    : '';
+                const skillList = skills.length
+                    ? `<div class="flex flex-wrap items-center gap-y-1 gap-x-2 text-xs text-neutral-500 dark:text-neutral-400"><span class="font-medium text-neutral-800 dark:text-neutral-200">Keahlian:</span>${skills.map(skill => `<span>${escapeHtml(skill)}</span>`).join(' · ')}</div>`
+                    : '';
+                const meta = [job.period, job.location, job.workMode].filter(Boolean).map(escapeHtml).join(' · ');
+
+                return `<article class="p-6 rounded-xl border border-neutral-200 dark:border-neutral-800/80 bg-white dark:bg-neutral-900/50">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-2">
+            <div>
+              <h3 class="text-lg font-bold text-neutral-950 dark:text-white">${escapeHtml(job.title)}</h3>
+              <p class="text-sm font-medium text-neutral-600 dark:text-neutral-400">${escapeHtml(job.company)} · ${escapeHtml(job.employmentType)}</p>
+            </div>
+            <span class="text-xs font-mono text-neutral-500 dark:text-neutral-400">${meta}</span>
+          </div>
+          ${details}${skillList}
+        </article>`;
+            }).join('');
+
+            modalContent.innerHTML = experienceData.map(job => {
+                const details = (job.details || []).length ? ` ${job.details.map(escapeHtml).join(' ')}` : '';
+                const skills = (job.skills || []).length ? ` Keahlian: ${job.skills.map(escapeHtml).join(', ')}.` : '';
+                const otherSkills = job.otherSkillsCount ? ` dan ${job.otherSkillsCount} keahlian lainnya.` : '';
+                const workInfo = [job.location, job.workMode].filter(Boolean).map(escapeHtml).join(' · ');
+
+                return `<div>
+          <span class="font-mono text-neutral-500">${escapeHtml(job.period)}</span>
+          <h4 class="font-bold text-sm">${escapeHtml(job.title)} · ${escapeHtml(job.company)} (${escapeHtml(job.employmentType)})</h4>
+          <p class="text-neutral-600 dark:text-neutral-400 mt-1">${workInfo}.${skills}${otherSkills}${details}</p>
+        </div>`;
+            }).join('');
+        }
+
+        renderExperience();
+
+        const htmlEl = document.documentElement;
+        const themeToggleBtn = document.getElementById('themeToggleBtn');
+        const sunIcon = document.getElementById('sunIcon');
+        const moonIcon = document.getElementById('moonIcon');
+
+        function initTheme() {
+            const saved = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (saved === 'dark' || (!saved && prefersDark)) {
+                htmlEl.classList.add('dark');
+                sunIcon.classList.remove('hidden');
+                moonIcon.classList.add('hidden');
+            } else {
+                htmlEl.classList.remove('dark');
+                sunIcon.classList.add('hidden');
+                moonIcon.classList.remove('hidden');
+            }
+        }
+
+        themeToggleBtn.addEventListener('click', () => {
+            const isDark = htmlEl.classList.toggle('dark');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            sunIcon.classList.toggle('hidden', !isDark);
+            moonIcon.classList.toggle('hidden', isDark);
+        });
+
+        initTheme();
+
+        function copyEmailToClipboard() {
+            navigator.clipboard.writeText('aridevstudio@gmail.com').then(() => {
+                const footerText = document.getElementById('footerCopyText');
+                const heroText = document.getElementById('heroCopyEmailText');
+                if (footerText) footerText.textContent = 'Tersalin!';
+                if (heroText) heroText.textContent = 'Email Tersalin!';
+                setTimeout(() => {
+                    if (footerText) footerText.textContent = 'Salin Alamat Email';
+                    if (heroText) heroText.textContent = 'Salin Email';
+                }, 2500);
+            });
+        }
+
+        async function handleContactSubmit(e) {
+            e.preventDefault();
+            const form = document.getElementById('contactForm');
+            const name = document.getElementById('fullName');
+            const email = document.getElementById('emailAddr');
+            const subject = document.getElementById('msgSubject');
+            const message = document.getElementById('msgContent');
+            const alertBox = document.getElementById('formAlertBox');
+            const alertMsg = document.getElementById('alertMessage');
+            const btnText = document.getElementById('btnText');
+
+            let valid = true;
+            if (name.value.trim().length < 2) { document.getElementById('nameError').classList.remove('hidden'); valid = false; } else { document.getElementById('nameError').classList.add('hidden'); }
+            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())) { document.getElementById('emailError').classList.remove('hidden'); valid = false; } else { document.getElementById('emailError').classList.add('hidden'); }
+            if (!subject.value.trim()) { document.getElementById('subjectError').classList.remove('hidden'); valid = false; } else { document.getElementById('subjectError').classList.add('hidden'); }
+            if (message.value.trim().length < 10) { document.getElementById('messageError').classList.remove('hidden'); valid = false; } else { document.getElementById('messageError').classList.add('hidden'); }
+
+            if (!valid) return;
+
+            btnText.textContent = 'Mengirim...';
+            try {
+                const res = await fetch('https://formspree.io/f/aridevstudio@gmail.com', {
+                    method: 'POST',
+                    body: new FormData(form),
+                    headers: { 'Accept': 'application/json' }
+                });
+                if (res.ok) {
+                    alertBox.className = 'mb-6 p-4 rounded-lg text-sm bg-emerald-50 text-emerald-800 dark:bg-emerald-950/40 dark:text-emerald-200 border border-emerald-300';
+                    alertMsg.textContent = 'Pesan Anda berhasil dikirim langsung ke aridevstudio@gmail.com! Saya akan segera merespons.';
+                    alertBox.classList.remove('hidden');
+                    form.reset();
+                } else {
+                    throw new Error();
+                }
+            } catch {
+                alertBox.className = 'mb-6 p-4 rounded-lg text-sm bg-rose-50 text-rose-800 dark:bg-rose-950/40 dark:text-rose-200 border border-rose-300';
+                alertMsg.textContent = 'Terjadi kendala saat mengirim via Formspree. Silakan hubungi langsung di aridevstudio@gmail.com.';
+                alertBox.classList.remove('hidden');
+            } finally {
+                btnText.textContent = 'Kirim Pesan Sekarang';
+            }
+        }
+
+        function openExperienceModal() { document.getElementById('experienceModal').classList.remove('hidden'); }
+        function closeExperienceModal() { document.getElementById('experienceModal').classList.add('hidden'); }
+        function openProjectModal(id) {
+            const titles = {
+                'proj-1': 'EduTech LMS & Interactive Code Playground',
+                'proj-2': 'Brand Identity System & E-Commerce Web',
+                'proj-3': 'Business ERP & POS Inventory Manager',
+                'proj-4': 'Training Curriculum Series (SKKNI & BNSP)'
+            };
+            const descs = {
+                'proj-1': 'Arsitektur Full-Stack RESTful memadukan React, Node.js, Express, dan PostgreSQL dengan live code preview evaluation.',
+                'proj-2': 'Perancangan identitas visual brand, logo guidelines, dan integrasi design tokens ke Tailwind CSS serta alur checkout modern.',
+                'proj-3': 'Database indexing teroptimasi untuk pencarian barcode instan <20ms dan caching offline-resilient.',
+                'proj-4': 'Metodologi pelatihan berbasis kompetensi (CBT) dengan alur praktik studi kasus 70% dan pendampingan micro-teaching.'
+            };
+            document.getElementById('modalTitle').textContent = titles[id] || 'Detail Solusi Digital';
+            document.getElementById('modalProblem').textContent = descs[id] || 'Solusi digital terintegrasi memadukan rekayasa perangkat lunak dan estetika desain.';
+            document.getElementById('projectModal').classList.remove('hidden');
+        }
+        function closeProjectModal() { document.getElementById('projectModal').classList.add('hidden'); }
+    </script>
+</body>
+
+</html>
